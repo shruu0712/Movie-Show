@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Show</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Movie Show Booking</h1>
+
+  <div id="movie-list"></div>
+
+  <!-- Booking Modal -->
+  <div id="booking-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-movie-title"></h2>
+      <p>Select Showtime:</p>
+      <div id="showtimes"></div>
+      <button onclick="bookTicket()">Book Ticket</button>
+    </div>
+  </div>
+
+  <!-- Confirmation -->
+  <div id="confirmation" class="hidden">
+    <h2>🎟️ Booking Confirmed!</h2>
+    <p id="confirmation-message"></p>
+    <button onclick="closeConfirmation()">OK</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
